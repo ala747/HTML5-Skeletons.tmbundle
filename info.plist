@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>HTML5 Skeletons</string>
+        <key>uuid</key>
+        <string>C23EF60F-2836-4139-B68D-6555C4E399BB</string>
+        <key>mainMenu</key>
+        <dict>
+            <key>items</key>
+            <array>
+                <string>628AF5B2-9449-45FD-9852-EBC7EB843F98</string>
+                <string>293F572D-BC67-42FF-821E-9CFF771DE581</string>
+            </array>
+        </dict>
+    </dict>
+</plist>

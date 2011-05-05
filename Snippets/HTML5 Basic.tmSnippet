@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>HTML5 Basic</string>
+        <key>uuid</key>
+        <string>293F572D-BC67-42FF-821E-9CFF771DE581</string>
+        <key>tabTrigger</key>
+        <string>skel5</string>
+        <key>content</key>
+        <string>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"${TM_XHTML}&gt;
+	&lt;title&gt;${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}&lt;/title&gt;
+
+	&lt;link rel="${2:stylesheet}" href="${3:/css/master.css}" type="${4:text/css}"${5: media="${6:screen}"}${7: title="${8:no title}"} charset="utf-8"${TM_XHTML}&gt;
+
+	&lt;!--[if${9: lt} IE${10: 9}]&gt;${11:
+		&lt;link href="${12:/css/iefix.css}" rel="stylesheet" type="text/css"${TM_XHTML}&gt;}
+		&lt;script src="${13:http://html5shim.googlecode.com/svn/trunk/html5.js}"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+&lt;/head&gt;
+&lt;body${14: id="${15:name}"}&gt;
+${0:$TM_SELECTED_TEXT}
+&lt;/body&gt;
+&lt;/html&gt;</string>
+        <key>scope</key>
+        <string>text.html</string>
+    </dict>
+</plist>

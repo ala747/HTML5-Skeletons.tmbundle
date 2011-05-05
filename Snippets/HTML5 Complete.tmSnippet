@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>HTML5 Complete</string>
+        <key>uuid</key>
+        <string>628AF5B2-9449-45FD-9852-EBC7EB843F98</string>
+        <key>content</key>
+        <string>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"${TM_XHTML}&gt;
+	&lt;title&gt;${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}&lt;/title&gt;
+${2:
+	&lt;meta name="author" content="${3:${4:Author Name\|}$TM_FULLNAME}"${TM_XHTML}&gt;}
+
+	&lt;link rel="${5:stylesheet}" href="${6:/css/master.css}" type="${7:text/css}"${8: media="${9:screen}"}${10: title="${11:no title}"} charset="utf-8"${TM_XHTML}&gt;
+
+	&lt;!--[if${12: lt} IE${13: 9}]&gt;${14:
+		&lt;link href="${15:/css/iefix.css}" rel="stylesheet" type="text/css"${TM_XHTML}&gt;}
+		&lt;script src="${16:http://html5shim.googlecode.com/svn/trunk/html5.js}"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+&lt;/head&gt;
+&lt;body${17: id="${18:name}"}&gt;
+&lt;div${19: id="${20:${21:name\|}wrapper}"}${23: class="${24:${25:classname\|}clearfix}"}&gt;
+	&lt;header${26: id="${27:name}"}${29: class="${30:${31:classname\|}clearfix}"}&gt;
+		&lt;h1&gt;${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}&lt;/h1&gt;${32:
+		&lt;h2&gt;${33:Claim}&lt;/h2&gt;}$45
+	&lt;/header&gt;${28:&lt;!-- /#${27:name} --&gt;}
+${44:
+	&lt;nav${34: id="${35:${36:name\|}top-nav}"}${38: class="${39:${40:classname\|}clearfix}$41"}&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="/" title="${42:Go to ${43:Home Page}}"&gt;${43:Home Page}&lt;/a&gt;&lt;/li&gt;
+			${0:$TM_SELECTED_TEXT}
+		&lt;/ul&gt;
+	&lt;/nav&gt;${37:&lt;!-- /#${35:${36:name\|}top-nav} --&gt;}}
+
+	&lt;div${46: id="${47:${48:name\|}content}"}${50: class="${51:${52:classname\|}clearfix}"}&gt;
+		&lt;section${53: id="${54:${55:name\|}data}"}${57: class="${58:${59:classname\|}clearfix}"}&gt;
+			&lt;!-- Content for #${54:${55:name\|}data} --&gt;
+		&lt;/section&gt;${56:&lt;!-- /#${54:${55:name\|}data} --&gt;}
+
+		&lt;section${60: id="${61:${62:name\|}extras}"}${64: class="${65:${66:classname\|}clearfix}"}&gt;
+			&lt;!-- Content for #${61:${62:name\|}extras} --&gt;
+		&lt;/section&gt;${63:&lt;!-- /#${61:${62:name\|}extras} --&gt;}
+
+	&lt;/div&gt;${49:&lt;!-- /#${47:${48:name\|}content} --&gt;}
+
+	&lt;footer${67: id="${68:${69:name\|}site-footer}"}${71: class="${72:${73:classname\|}clearfix}$74"}&gt;
+		&lt;!-- Content for #${68:${69:name\|}site-footer} --&gt;
+	&lt;/footer&gt;${70:&lt;!-- /#${68:${69:name\|}site-footer} --&gt;}
+
+&lt;/div&gt;${22:&lt;!-- /#${20:${21:name\|}wrapper} --&gt;}
+&lt;/body&gt;
+&lt;/html&gt;</string>
+        <key>scope</key>
+        <string>text.html</string>
+        <key>tabTrigger</key>
+        <string>skel5</string>
+    </dict>
+</plist>
