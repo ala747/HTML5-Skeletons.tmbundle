@@ -15,15 +15,18 @@
 	&lt;meta charset="utf-8"${TM_XHTML}&gt;
 	&lt;title&gt;${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}&lt;/title&gt;
 
-	&lt;link rel="${2:stylesheet}" href="${3:/css/master.css}" type="${4:text/css}"${5: media="${6:screen}"}${7: title="${8:no title}"} charset="utf-8"${TM_XHTML}&gt;
+	&lt;link rel="stylesheet" href="${2:/css/master.css}"${3: media="${4:screen}"}${TM_XHTML}&gt;
 
-	&lt;!--[if${9: lt} IE${10: 9}]&gt;${11:
-		&lt;link href="${12:/css/iefix.css}" rel="stylesheet" type="text/css"${TM_XHTML}&gt;}
-		&lt;script src="${13:http://html5shim.googlecode.com/svn/trunk/html5.js}"&gt;&lt;/script&gt;
+	&lt;!--[if${5: lt} IE${6: 9}]&gt;${7:
+		&lt;style&gt;
+			aside, nav, footer, header, section { display:block \} 
+		&lt;/style&gt;}${8:
+		&lt;link rel="stylesheet" href="${9:/css/iefix.css}"${TM_XHTML}&gt;}
+		&lt;script src="${10:http://html5shim.googlecode.com/svn/trunk/html5.js}"&gt;&lt;/script&gt;
 	&lt;![endif]--&gt;
 
 &lt;/head&gt;
-&lt;body${14: id="${15:name}"}&gt;
+&lt;body${11: id="${12:${13:name\|}${1/\W|(\w)/(?1:\l$1:-)/g}"}}&gt;
 ${0:$TM_SELECTED_TEXT}
 &lt;/body&gt;
 &lt;/html&gt;</string>

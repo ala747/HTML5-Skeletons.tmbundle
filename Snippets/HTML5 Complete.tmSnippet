@@ -14,21 +14,21 @@
 	&lt;title&gt;${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}&lt;/title&gt;
 ${2:
 	&lt;meta name="author" content="${3:${4:Author Name\|}$TM_FULLNAME}"${TM_XHTML}&gt;}
+${5:
+	&lt;link rel="stylesheet" href="${6:/css/master.css}"${7: media="${8:screen}"}${TM_XHTML}&gt;}
 
-	&lt;link rel="${5:stylesheet}" href="${6:/css/master.css}" type="${7:text/css}"${8: media="${9:screen}"}${10: title="${11:no title}"} charset="utf-8"${TM_XHTML}&gt;
-
-	&lt;!--[if${12: lt} IE${13: 9}]&gt;${14:
-		&lt;link href="${15:/css/iefix.css}" rel="stylesheet" type="text/css"${TM_XHTML}&gt;}
-		&lt;script src="${16:http://html5shim.googlecode.com/svn/trunk/html5.js}"&gt;&lt;/script&gt;
+	&lt;!--[if${9: lt} IE${10: 9}]&gt;${11:
+		&lt;link rel="stylesheet" href="${12:/css/iefix.css}"${TM_XHTML}&gt;}
+		&lt;script src="${13:http://html5shim.googlecode.com/svn/trunk/html5.js}"&gt;&lt;/script&gt;
 	&lt;![endif]--&gt;
 
 &lt;/head&gt;
-&lt;body${17: id="${18:name}"}&gt;
-&lt;div${19: id="${20:${21:name\|}wrapper}"}${23: class="${24:${25:classname\|}clearfix}"}&gt;
-	&lt;header${26: id="${27:name}"}${29: class="${30:${31:classname\|}clearfix}"}&gt;
+&lt;body${14: id="${15:${16:name\|}${1/\W|(\w)/(?1:\l$1:-)/g}"}}&gt;
+&lt;div${17: id="${18:${19:name\|}wrapper}"}${21: class="${22:${23:classname\|}clearfix}"}&gt;
+	&lt;header${24: id="${25:${26:name\|}site-header}"}${29: class="${30:${31:classname\|}clearfix}"}&gt;
 		&lt;h1&gt;${1:${TM_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}&lt;/h1&gt;${32:
 		&lt;h2&gt;${33:Claim}&lt;/h2&gt;}$45
-	&lt;/header&gt;${28:&lt;!-- /#${27:name} --&gt;}
+	&lt;/header&gt;${28:&lt;!-- /#${25:${26:name\|}site-header} --&gt;}
 ${44:
 	&lt;nav${34: id="${35:${36:name\|}top-nav}"}${38: class="${39:${40:classname\|}clearfix}$41"}&gt;
 		&lt;ul&gt;
@@ -52,7 +52,7 @@ ${44:
 		&lt;!-- Content for #${68:${69:name\|}site-footer} --&gt;
 	&lt;/footer&gt;${70:&lt;!-- /#${68:${69:name\|}site-footer} --&gt;}
 
-&lt;/div&gt;${22:&lt;!-- /#${20:${21:name\|}wrapper} --&gt;}
+&lt;/div&gt;${20:&lt;!-- /#${18:${19:name\|}wrapper} --&gt;}
 &lt;/body&gt;
 &lt;/html&gt;</string>
         <key>scope</key>

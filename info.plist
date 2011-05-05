@@ -12,7 +12,21 @@
             <array>
                 <string>628AF5B2-9449-45FD-9852-EBC7EB843F98</string>
                 <string>293F572D-BC67-42FF-821E-9CFF771DE581</string>
+                <string>------------------------------------</string>
+                <string>B7AB8890-4173-4C14-93EB-575EF68133AA</string>
+                <string>56805F3C-03D9-4B41-9D58-43E60FF06628</string>
+                <string>EAE1CDA8-0B6A-470C-B1EB-7C9B3556AB3F</string>
             </array>
+            <key>submenus</key>
+            <dict>
+                <key>EAE1CDA8-0B6A-470C-B1EB-7C9B3556AB3F</key>
+                <dict>
+                    <key>items</key>
+                    <array />
+                    <key>name</key>
+                    <string>Parts</string>
+                </dict>
+            </dict>
         </dict>
     </dict>
 </plist>
