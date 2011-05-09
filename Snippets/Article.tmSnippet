@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Article</string>
+        <key>uuid</key>
+        <string>0EC7422C-1BD0-43A7-84CF-0DD95881F9D8</string>
+        <key>content</key>
+        <string>&lt;article${1: class="${2:${3:classname\|}post}"}&gt;
+	&lt;header${5: class="${6:${7:classname\|}post-header}"}&gt;
+		&lt;h1${9: class="${10:${11:classname\|}post-title}"}&gt;${12:&lt;a href="${13:#}" rel="bookmark" title="${15:Permalink to: ${16:${14/(")/(?1:')/g}}}"&gt;}${14:Article's Title}${12/(.+)/(?1:&lt;\/a&gt;)/g}&lt;/h1&gt;
+	&lt;/header&gt;${8:&lt;!-- /.${6:${7:classname\|}post-header} --&gt;}
+	&lt;div${17: class="${18:${19:classname\|}post-content}"}&gt;
+		${36:&lt;!-- Content for $14 --&gt;}
+		$0
+	&lt;/div&gt;${20:&lt;!-- /.${18:${19:classname\|}post-content} --&gt;}
+	&lt;footer${21: class="${22:${23:classname\|}post-footer}"}&gt;
+		&lt;abbr${25: class="${26:${27:classname\|}post-date}"} title="${28:`date --iso-8601='seconds'`}"&gt;&lt;!-- YYYY-MM-DDThh:mm:ss+ZZZZ --&gt;
+			${29:`date --iso-8601`} &lt;!-- YYYY-MM-DD --&gt;
+		&lt;/abbr&gt;
+		&lt;address${30: class="${31:${32:classname\|}post-author}"}&gt;
+			By ${33:&lt;a class="url fn" href="${34:#}"&gt;}${35:The Autor's Name}${33/(.+)/(?1:&lt;\/a&gt;)/g}
+		&lt;/address&gt;
+	&lt;/footer&gt;${24:&lt;!-- /.${22:${23:classname\|}post-footer} --&gt;}
+&lt;/article&gt;${4:&lt;!-- /.${2:${3:classname\|}post} --&gt;}</string>
+        <key>scope</key>
+        <string>text.html</string>
+        <key>tabTrigger</key>
+        <string>skel5_p_art</string>
+    </dict>
+</plist>

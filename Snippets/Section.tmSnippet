@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Section</string>
+        <key>uuid</key>
+        <string>FEBC3F9D-91A8-4D1C-9B54-3479F42388D4</string>
+        <key>content</key>
+        <string>&lt;header${1: id="${2:${3:name\|part}-header}"}${5: class="${6:${7:classname\|}clearfix}"}&gt;
+	&lt;h1&gt;${8:Page/Sections/Article/Aside Title}&lt;/h1&gt;
+	${9:&lt;h2&gt;${10:Page/Sections/Article/Aside Subtitle}&lt;/h2&gt;
+	}$11
+&lt;/header&gt;${4:&lt;!-- /#${2:${3:name\|part}-header} --&gt;}</string>
+        <key>scope</key>
+        <string>text.html</string>
+        <key>tabTrigger</key>
+        <string>skel5_p_sect</string>
+    </dict>
+</plist>

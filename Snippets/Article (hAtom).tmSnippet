@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Article (hAtom)</string>
+        <key>uuid</key>
+        <string>D45FD814-8176-4B24-8FA3-FC25F025EEE6</string>
+        <key>content</key>
+        <string>&lt;article class="hentry"&gt;
+	&lt;header&gt;
+		&lt;h1 class="entry-title"&gt;${1:&lt;a href="${2:#}" rel="bookmark" title="${3:Permalink to: ${5:${4/(")/(?1:')/g}}}"&gt;}${4:Article's Title}${1/(.+)/(?1:&lt;\/a&gt;)/g}&lt;/h1&gt;
+	&lt;/header&gt;
+	&lt;footer class="post-info"&gt;
+		&lt;abbr class="published" title="${6:`date --iso-8601='seconds'`}"&gt;&lt;!-- YYYY-MM-DDThh:mm:ss+ZZZZ --&gt;
+			${7:`date --rfc-822`}
+		&lt;/abbr&gt;
+		&lt;address class="vcard author"&gt;
+			By ${8:&lt;a class="url fn" href="${9:#}"&gt;}${10:The Autor's Name}${8/(.+)/(?1:&lt;\/a&gt;)/g}
+		&lt;/address&gt;
+	&lt;/footer&gt;&lt;!-- /.post-info --&gt;
+	&lt;div class="entry-content"&gt;
+		${11:&lt;!-- Content for $4 --&gt;}
+		$0
+	&lt;/div&gt;&lt;!-- /.entry-content --&gt;
+&lt;/article&gt;&lt;!-- /.hentry --&gt;</string>
+        <key>scope</key>
+        <string>text.html</string>
+        <key>tabTrigger</key>
+        <string>skel5_p_arth</string>
+    </dict>
+</plist>

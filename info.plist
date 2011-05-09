@@ -10,11 +10,10 @@
         <dict>
             <key>items</key>
             <array>
-                <string>628AF5B2-9449-45FD-9852-EBC7EB843F98</string>
-                <string>293F572D-BC67-42FF-821E-9CFF771DE581</string>
+                <string>0D17C75C-B387-4CCE-9F90-2DD8310BCD0E</string>
                 <string>------------------------------------</string>
-                <string>B7AB8890-4173-4C14-93EB-575EF68133AA</string>
-                <string>56805F3C-03D9-4B41-9D58-43E60FF06628</string>
+                <string>7DDAFB32-FA7C-407F-8498-EBC681FE76B8</string>
+                <string>------------------------------------</string>
                 <string>EAE1CDA8-0B6A-470C-B1EB-7C9B3556AB3F</string>
             </array>
             <key>submenus</key>
@@ -22,9 +21,33 @@
                 <key>EAE1CDA8-0B6A-470C-B1EB-7C9B3556AB3F</key>
                 <dict>
                     <key>items</key>
-                    <array />
+                    <array>
+                        <string>CC2121F8-E220-480B-921E-631A59CBD519</string>
+                        <string>0EC7422C-1BD0-43A7-84CF-0DD95881F9D8</string>
+                        <string>D45FD814-8176-4B24-8FA3-FC25F025EEE6</string>
+                    </array>
                     <key>name</key>
                     <string>Parts</string>
+                </dict>
+                <key>0D17C75C-B387-4CCE-9F90-2DD8310BCD0E</key>
+                <dict>
+                    <key>items</key>
+                    <array>
+                        <string>293F572D-BC67-42FF-821E-9CFF771DE581</string>
+                        <string>628AF5B2-9449-45FD-9852-EBC7EB843F98</string>
+                    </array>
+                    <key>name</key>
+                    <string>Skeletons</string>
+                </dict>
+                <key>7DDAFB32-FA7C-407F-8498-EBC681FE76B8</key>
+                <dict>
+                    <key>items</key>
+                    <array>
+                        <string>56805F3C-03D9-4B41-9D58-43E60FF06628</string>
+                        <string>B7AB8890-4173-4C14-93EB-575EF68133AA</string>
+                    </array>
+                    <key>name</key>
+                    <string>CSS3 Resets</string>
                 </dict>
             </dict>
         </dict>
